@@ -1,4 +1,4 @@
-name: CD - Deploy para GitHub Pages
+name: Continuous Delivery
 
 on:
   push:
@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout do código
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         
 
-      - name: Deploy com GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Simulando CD
+        uses: actions/upload-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: index.html
-          publish_branch: ci-cd
+          name: html
+          path: |
+            index.html
