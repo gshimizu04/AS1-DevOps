@@ -15,5 +15,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: \projetoHTML\index.html
-          publish_branch: ci-cd
+          publish_dir: \index.html
+          publish_branch: gh-pages
