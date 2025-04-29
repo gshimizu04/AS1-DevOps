@@ -1,4 +1,4 @@
-name: Discord - Alerta
+name: Discord Webhook - Alerta
 
 on:
   - push
